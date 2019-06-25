@@ -1,0 +1,4 @@
+ng new catonline
+cd cATONLINE
+npm install -g @angular/cli@7.3.7
+
