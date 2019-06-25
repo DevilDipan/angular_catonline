@@ -1,0 +1,107 @@
+<button (click)="backClicked()" color="primary" mat-raised-button>Back</button>
+<div class="fool" ng-cloak *ngIf="!showMainContent">
+<h3 align="center">TL-1 MPS System Information History</h3>
+<div>
+  <div class="moreinfo" style="padding-left: 115px" >
+    <h4>Power Supply Selection</h4>
+  </div>
+  <div class="moreinfo" style="padding-left: 20px;">
+    <mat-form-field>
+      <mat-label>Choose the system</mat-label>
+      <mat-select required [(value)]="solar">
+        <mat-option value="1">PS-1 [QP-1]</mat-option>
+        <mat-option value="2">PS-2 [QP-2]</mat-option>
+        <mat-option value="3">PS-3 [QP-3]</mat-option>
+        <mat-option value="4">PS-4 [QP-4]</mat-option>
+        <mat-option value="5">PS-5 [DP-1]</mat-option>
+        <mat-option value="6">PS-6 [HSC-1]</mat-option>
+        <mat-option value="7">PS-7 [VSC-1]</mat-option>
+        <mat-option value="8">PS-8 [VSC-2]</mat-option>
+        <mat-option value="9">PS-9 [HSC-2]</mat-option>
+        <mat-option value="10">PS-10 [HSC-3]</mat-option>
+        <mat-option value="11">PS-11 [VSC-3]</mat-option>
+        <mat-option value="12">PS-12 [VSC-4]</mat-option>
+        <mat-option value="13">PS-13 [HSC-4]</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+<div style="padding-top:0.5rem;">
+  <div class="moreinfo" style="padding-left:33px">
+    <h4>Sample Rate</h4>      
+  </div>
+  <div class="moreinfo box" style="padding-left: 10px;">
+    <mat-form-field class="select-dep">
+      <mat-select required class="select-dep" placeholder="Choose the rate" [(ngModel)]="selectedValue">
+        <mat-option *ngFor="let car of cars" [value]="car">
+          {{car.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="moreinfo" style="padding-left: 10px">
+    <h4>Time Duration</h4>
+  </div>
+  <div class="moreinfo box" style="padding-left: 10px;">
+    <mat-form-field class="select-dep" *ngIf="selectedValue">
+        <mat-select required class="select-dep" placeholder="Choose the time" [(ngModel)]="selectedValued">
+          <mat-option *ngFor="let model of selectedValue.models" [value]="model">
+            {{model}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+</div>
+<div style=" padding-top:0.5rem;">
+  <div class="moreinfo" style="padding-left: 36px">
+      <h4>Date</h4>
+  </div>
+  <div class="moreinfo" style="padding-left: 10px">
+    <mat-form-field>
+      <input [(ngModel)]="date.value" matInput [matDatepicker]="picker" placeholder="Choose a Date" style="margin-bottom: -7px; font-size:16px; 
+      padding-bottom: 6px; border: 0; outline: 0; background: transparent; border-bottom: 1px solid #808080; opacity:1; 
+      color: black;" [value]="date.value" disabled>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker touchUi #picker disabled="false" style=" opacity:1;"></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="moreinfo" style="padding-left: 10px">
+      <h4>Time</h4>
+  </div>
+  <div class="moreinfo" style="padding-left: 15px">
+    <div class="toggle-example" style="position:relative; font-size: 16px;">
+      <input [(ngModel)]="jmtoday" [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly  class="moreinfo finput ripple"  placeholder=" "  [value]="jmtoday">
+      <span class="timer">Choose the Time</span>
+      <ngx-material-timepicker-toggle [for]="toggleTimepicker" class="moreinfo"></ngx-material-timepicker-toggle>
+      <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
+    </div>
+  </div> 
+</div>
+<div style="padding-left: 1rem; padding-top:0.9rem;">
+  <div class="moreinfo" style="padding-right: 10px">
+    <h4>Form: </h4>
+  </div>
+  <mat-radio-group [(ngModel)]="favoriteSeason">
+    <mat-radio-button style="padding-left: 10px" *ngFor="let season of seasons" [value]="season">
+      {{season}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="moreinfo" style="padding-left: 8rem;">
+    <button (click)="ShowHideButton()" color="primary" mat-raised-button matTooltip="Default values would be taken if not chosen" aria-label="Submit">Submit</button>
+  </div>
+  <div class="moreinfo" style="padding-left: 1rem;">
+    <button value="Refresh Page" onClick="window.location.reload();" mat-raised-button >Refresh</button>
+  </div>
+</div>
+</div>
+
+<div class="fool" ngcloak *ngIf="showMainContent" style="padding:10px">
+  <div style="padding:10px">PowerSupply: {{solar}}</div>
+  <div style="padding:10px">Sample Rate: {{selectedValue | json}}</div>
+  <div style="padding:10px">Time Duration: {{selectedValued | json}}</div>
+  <div style="padding:10px">Date: {{date.value + "0530" | json}}</div>
+  <div style="padding:10px">Time: {{jmtoday | json}}</div>
+  <div style="padding:10px">Format: {{favoriteSeason}}</div>
+  <!--<div><h4>Debug...:</h4> {{}}</div>-->
+  <div style="padding-bottom:12px; padding-left:530px"><button (click)="ShowHideButton()" color="warn" mat-raised-button>Edit</button></div>
+</div>

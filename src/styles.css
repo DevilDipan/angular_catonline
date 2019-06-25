@@ -1,0 +1,123 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.fool{
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  min-width: 38rem; 
+  max-width: 38rem; 
+  background: none no-repeat scroll 0 0 rgba(255, 255, 255, 0.85); 
+  border: 2px solid #3f51b5; 
+  border-radius: 9px;
+}
+
+.select-dep{
+  min-width: 150px; 
+  max-width: 150px;
+}
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  background-image: url("src/assets/image/full.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+.moreinfo {
+  display: inline-block;
+} 
+
+.finput {
+  padding-bottom: 6px;
+  font-size:16px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid 	#808080;
+}
+
+.finput:focus + span, .finput:not(:placeholder-shown) + span {
+  opacity:1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+  padding: 7.5px;
+  padding-bottom: 12px;
+}
+
+/* For IE Browsers*/
+.finput:focus + span, .finput:not(:-ms-input-placeholder) + span {
+  opacity:1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+  padding: 7.5px;
+  padding-bottom: 12px;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .3;
+  transition: 0s;
+}
+.timepicker .timepicker__header {
+  background-color: #3f51b5 !important;
+}
+.timepicker .clock-face__clock-hand {
+  background-color: #3f51b5 !important;
+}
+.timepicker .clock-face__clock-hand::after {
+  background-color: #f3e5f5 !important;
+}
+.timepicker .clock-face__clock-hand::before {
+  border-color: #3f51b5 !important;
+}
+.timepicker .clock-face__number > span.active {
+  background-color: #3f51b5 !important;
+}
+.timepicker button:not(.timepicker-dial__item) {
+  color: #3f51b5 !important;
+}
+
+.timer{
+  margin-top:11px; 
+  pointer-events: none; 
+  position:absolute; 
+  left:0; 
+  top:0; 
+  transition: 0.2s; 
+  transition-timing-function: ease; 
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); 
+  opacity:0.55; 
+  font-size: 16px;
+}
