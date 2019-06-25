@@ -1,0 +1,12 @@
+Installation: -
+1.	Node Js 10.16.0 (https://nodejs.org/en/)
+2.	Visual Studio Code 1.35.1 (https://code.visualstudio.com/)
+3.	Angular (npm install -g @angular/cli)
+4.	Angular Material (npm install --save @angular/material @angular/cdk @angular/animations)
+5.	Angular Ngtimepicker (https://agranom.github.io/ngx-material-timepicker/)
+Trick to install Django in proxy based systems using terminal/command prompt  is 
+	Put the proxy inside ng
+
+Location of Files: -
+    Location of Installation file: F:\Dipan\Insallers
+    Location of Project: F:\Catonline
