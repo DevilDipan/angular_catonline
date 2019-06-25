@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
-## Website made using angular
+# Website made using angular
 This is a partial project complete project cant be shown because of restrications.
 
 ## Development server
