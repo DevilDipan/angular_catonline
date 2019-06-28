@@ -32,3 +32,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Screenshots
 
 ![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/1.png)
+![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/2.png)
+![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/3.png)
+![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/4.png)
+![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/5.png)
+![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/6.png)
+![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/7.png)
+![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/8.png)
