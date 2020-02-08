@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
+**Note -** This is a partial project because of restrictions.
+
 # Website made using angular
 This is a partial project complete project cant be shown because of restrications.
 
