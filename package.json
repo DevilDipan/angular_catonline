@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "11.0.2",
     "@angular/router": "11.0.2",
     "jquery": "3.5.1",
-    "luxon": "1.25.0",
+    "luxon": "1.26.0",
     "ngx-material-timepicker": "5.5.3",
     "rxjs": "6.6.3",
     "tslib": "2.0.3",
