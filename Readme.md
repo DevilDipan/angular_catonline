@@ -1,4 +1,4 @@
-![catOnline](https://github.com/indusOnline/catOnline/tree/master/images/logo.png) <br>
+ ![catOnline](https://github.com/indusOnline/catOnline/blob/master/images/logo.png) <br>
 
 # Index
 1. [Dev server](#dev-server)
