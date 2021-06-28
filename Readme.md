@@ -28,15 +28,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Website Samples
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/1.png)
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/2.png)
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/3.png)
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/4.png)
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/5.png)
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/6.png)
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/7.png)
-![alt text](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/images/8.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/1.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/2.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/3.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/4.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/5.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/6.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/7.png)
+![alt text](https://github.com/indusOnline/catOnline/blob/master/images/8.png)
 
 ## License
 ### This is under GNU Affero General Public License v3.0
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/DevilDipan/Angular-Project_Internship/blob/master/LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/indusOnline/catOnline/blob/master/LICENSE)
